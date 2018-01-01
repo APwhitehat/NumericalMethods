@@ -181,7 +181,7 @@ class Bairstow(NonLinearSolve):
             return delx
 
     def f(self, x):
-        fx, term = 0, 1
+        fx, term = 0.0, 1.0
         for coef in self.user_func[::-1]:
             fx += term * coef
             term *= x

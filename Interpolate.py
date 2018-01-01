@@ -1,23 +1,7 @@
 from __future__ import division
 import numpy as np
-import matplotlib.pyplot as plt
 from LinearSolve import LinearSolver
-
-
-class Grapher:
-    ''' plot f in range l, r '''
-    @staticmethod
-    def plot(f, l, r, x=None, y=None, xlabel='x', ylabel='f(x)', title='f(x) vs x', points=1000):
-        if x is not None and y is not None:
-            plt.scatter(x, y)
-        xvals = np.arange(l, r, (r - l) / points)
-        yvals = map(f, xvals)
-        plt.plot(xvals, yvals)
-        plt.grid()
-        plt.xlabel(xlabel)
-        plt.ylabel(ylabel)
-        plt.title(title)
-        plt.show()
+from utils import Grapher
 
 
 class Interpolator():

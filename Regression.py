@@ -1,7 +1,7 @@
 from __future__ import division
 import numpy as np
 from LinearSolve import LinearSolver
-from Interpolate import Grapher
+from utils import Grapher
 
 
 class Regressor():
